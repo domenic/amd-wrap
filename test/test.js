@@ -15,7 +15,7 @@ specify("It works", function () {
     assert.strictEqual(output, expected);
 });
 
-specify("It works", function () {
+specify("It works when the string is already wrapped", function () {
     var input = fs.readFileSync(path.resolve(__dirname, "fixtures/last.amd.js"), "utf-8");
     var output = amdWrap(input);
     var expected = fs.readFileSync(path.resolve(__dirname, "fixtures/last.amd.js"), "utf-8");
