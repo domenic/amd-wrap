@@ -3,7 +3,7 @@
     "description": "Wraps CommonJS files in `define(function (require, exports, module) { ... })`.",
     "keywords": ["amd", "commonjs", "modules", "build"],
     "version": "1.0.1",
-    "author": "Domenic Denicola <domenic@domenicdenicola.com> (http://domenicdenicola.com)",
+    "author": "Domenic Denicola <domenic@domenicdenicola.com> (http://domenic.me/)",
     "license": "WTFPL",
     "repository": {
         "type": "git",
