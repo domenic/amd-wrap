@@ -20,3 +20,9 @@ var wrapThis = amdWrap(fs.readFileSync(__filename));
 
 Line numbers will line up, although the first column will be shifted by
 `"define (function (require, exports, module) {".length` characters.
+
+## Exceptions
+
+It will not wrap if:
+- the file is already wrapped
+- the file starts with a comment `// amd-wrap:disable`
