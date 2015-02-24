@@ -3,20 +3,19 @@
     "description": "Wraps CommonJS files in `define(function (require, exports, module) { ... })`.",
     "keywords": ["amd", "commonjs", "modules", "build"],
     "version": "1.1.0",
-    "author": "Domenic Denicola <domenic@domenicdenicola.com> (http://domenic.me/)",
+    "author": "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
     "license": "WTFPL",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/domenic/amd-wrap.git"
-    },
-    "bugs": "http://github.com/domenic/amd-wrap/issues",
+    "repository": "domenic/amd-wrap",
     "main": "lib/amd-wrap.js",
+    "files": [
+        "lib/"
+    ],
     "scripts": {
         "test": "mocha",
         "lint": "jshint lib"
     },
     "devDependencies": {
-        "jshint": "~2.4.4",
-        "mocha": "~1.18.2"
+        "jshint": "^2.6.0",
+        "mocha": "^1.21.5"
     }
 }
