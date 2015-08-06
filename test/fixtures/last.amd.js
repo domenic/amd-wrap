@@ -1,4 +1,5 @@
-define(function (require, exports, module) {"use strict";
+define(function (require, exports, module) {
+"use strict";
 
 var pending = { then: function () {} };
 
