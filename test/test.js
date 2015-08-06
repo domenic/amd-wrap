@@ -22,3 +22,19 @@ specify("It doesn't re-wrap when the string is already wrapped", function () {
 
     assert.strictEqual(output, expected);
 });
+
+specify("It doesn't re-wrap when the string is already wrapped and there is one blank before define", function () {
+    var input = fs.readFileSync(path.resolve(__dirname, "fixtures/blank-before-amd.js"), "utf-8");
+    var output = amdWrap(input);
+    var expected = fs.readFileSync(path.resolve(__dirname, "fixtures/blank-before-amd.js"), "utf-8");
+
+    assert.strictEqual(output, expected);
+});
+
+specify("It doesn't re-wrap when the string is already wrapped and there is more param in define", function () {
+    var input = fs.readFileSync(path.resolve(__dirname, "fixtures/more-param-amd.js"), "utf-8");
+    var output = amdWrap(input);
+    var expected = fs.readFileSync(path.resolve(__dirname, "fixtures/more-param-amd.js"), "utf-8");
+
+    assert.strictEqual(output, expected);
+});
