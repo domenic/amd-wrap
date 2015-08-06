@@ -13,8 +13,14 @@ It takes in a string and gives back a string:
 ```js
 var amdWrap = require("amd-wrap");
 
+// wrap define around string
 var wrapped = amdWrap("module.exports = 5;");
+
+// wrap define around the string from file
 var wrapThis = amdWrap(fs.readFileSync(__filename));
+
+// wrap define and moduleName
+var wrapped = amdWrap("moduleName","module.exports = 5;");
 ```
 
 Line numbers will line up, although the first column will be shifted by
